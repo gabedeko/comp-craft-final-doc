@@ -19,7 +19,8 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <div>
-                <h2><a class="navbar-brand" href="#">Soft MIDI Board Documentation</a></h2>
+                <h1>Soft MIDI Board</h1>
+                <h3>Documentation</h3>
                 <h5>1.0.0</h5>  
             </div>
             <div>
@@ -57,21 +58,21 @@
             <div class="tab-content" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="v-pills-desc" role="tabpanel" aria-labelledby="v-pills-desc-tab">
     
-               <p>My final project will be a soft MIDI board. The goal of the work is to experiment with how using fabrics and textiles as a musical instrument can create a unique experience and output compared to the standard plastic/metal options.Bluetooth functionality will also be available for the board so it does not need to be plugged into the computer. The result is a interactive textile that can with any digital audio workstation(DAW). 
+               <p>My final project will be a soft MIDI board. The goal of the work is to experiment with how using fabrics and textiles as a musical instrument can create a unique experience and output compared to the standard plastic/metal options. Bluetooth functionality is also  available for the board so it does not need to be plugged into the computer. The result is a interactive textile that can with any digital audio workstation(DAW). 
                 </p>
                <p>The soft MIDI is composed of a series of different swatches. Each swatch represent different forms of controller data and notes that will translate to sounds within a DAW. this may include samples, drums, clips, and various other types of audio. inputs can be customizable and configured to fit the wearer’s musical style or preference.
                 </p>
-                <p>The goal of my project to to experiment with how different emotions and feelings can be brought out of the process of creating music depending on the feeling of the instrument. Traditionally MIDI boards are built similarly to the way most other consumer electronic are.</p>
+                <p>The goal of my project to to experiment with how different emotions and feelings can be brought out of the process of creating music depending on the feeling of the instrument. Traditionally MIDI boards are built similarly to the way most other consumer electronic are. Maybe it can be put on a wall or on a body.</p>
             
               </div>
               <div class="tab-pane fade" id="v-pills-circuit" role="tabpanel" aria-labelledby="v-pills-circuit-tab">
-                <img src="./assets/circult_mockup.jpg" class="img-fluid" alt="circuit mockup">
+                <img src="./assets/circult_diagram.jpg" class="img-fluid" alt="circuit diagram">
               </div>
               
               <div class="tab-pane fade" id="v-pills-materials" role="tabpanel" aria-labelledby="v-pills-materials-tab">
                 <h2>Hardware</h2>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Light jacket that can be sewn into</li>
+                  <li class="list-group-item">Cotton fabric for board foundation</li>
                   <li class="list-group-item">10+ square light cotton fabric swatches</li>
                   <li class="list-group-item">Copper Taffeta Fabric</li>
                   <li class="list-group-item">Copper tape</li>
@@ -80,7 +81,7 @@
                   <li class="list-group-item">Solder iron + solder</li>
                   <li class="list-group-item">Silicone Cover Stranded-Core Wire - 50ft</li>
                   <li class="list-group-item">Masking tape</li>
-                  <li class="list-group-item">2+ NeoPixel RGBW LEDs</li>
+                  <li class="list-group-item">1+ NeoPixel RGBW LEDs</li>
                   <li class="list-group-item">Adafruit Feather 32u4 Bluefruit LE</li>
                   <li class="list-group-item">MPR121 Capacitive Touch Sensor</li>
                   <li class="list-group-item">2500mAh Lipo battery</li>
@@ -127,23 +128,22 @@
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1">Ableton Live 11</h5>
                     </div>
-                    <p class="mb-1">In order to actually create music on one’s computer you may need a DAW( Digital Audio Workstation). Ableton Live is designed to be an instrument for live performances as well as a tool for composing, recording, arranging, mixing, and mastering. It also allows beatmatching, crossfading, and a wide range of other effects. The jacket will be played through this software.</p>
+                    <p class="mb-1">In order to actually create music on one’s computer you may need a DAW( Digital Audio Workstation). Ableton Live is designed to be an instrument for live performances as well as a tool for composing, recording, arranging, mixing, and mastering. It also allows beatmatching, crossfading, and a wide range of other effects. The board will be played through this software.</p>
                   </a>
                 </div>
               </div>
               <div class="tab-pane fade" id="v-pills-process" role="tabpanel" aria-labelledby="v-pills-process-tab">
                 <h2>Wiring</h2>
-                <p>The circuit diagram shared in the earlier section displays how the microcontroller and capacitive touch sensors should be wired into the clothing. Make sure that the microcontroller and touch sensor are wired and functioning correctly through tests before sewing them into the jacket. Otherwise you will either have to troubleshoot them attached to the jacket or remove them and re-sew.</p>
-                <img src="./assets/capacative_touch.jpg" class="img-fluid" alt="circuit mockup">
-                <p>Depending on exactly where you sew in your microcontroller, you will need to make sure that your silicon wire is measured and is long enough to reach where you will be placing your patches. Because soldering on wires can be somewhat fragile, it is important that you handle with care and sew the wires into the jacket as well so that they aren’t loose and at risk of potentially being ripped apart. Masking tape also comes in handy to ensure everything stays in place while being modified.</p>
+                <p>The circuit diagram shared in the earlier section displays how the microcontroller and capacitive touch sensors should be wired into the piece. Make sure that the microcontroller and touch sensor are wired and functioning correctly through tests before sewing them into the board. Otherwise you will either have to troubleshoot them attached to the board or remove them and re-sew.</p>
+                <img src="./assets/capacative_touch.jpg" class="img-fluid" alt="capacative touch sensors">
+                <p>Depending on exactly where you sew in your microcontroller, you will need to make sure that your silicon wire is measured and is long enough to reach where you will be placing your swatch buttons. Because soldering on wires can be somewhat fragile, it is important that you handle with care and sew the wires into the object as well so that they aren’t loose and at risk of potentially being ripped apart. Masking tape also comes in handy to ensure everything stays in place while being modified.</p>
                
-                <p>Once you have securely sewn all of the necessary wires into the jacket, now cut a small hole within the square of where the patch will be and stick the wire through the hole from the inside of the jacket to the outside. Do this for each patch/wire combination. Once you have the head of each wire on the outside of the jacket use the copper tape to attach a small cutout square of copper taffeta fabric onto exposed wire. This will allow the capacitive touch sensor to recognize the capper taffeta as a touchpad.</p>
+                <p>Once you have securely sewn all of the necessary wires into the board, now cut a small hole within the square of where the swatch buttons will be and stick the wire through the hole from the inside of the board to the outside. Do this for each button/wire combination. Once you have the head of each wire on the outside of the board use the copper tape to attach a small cutout square of copper taffeta fabric onto exposed wire. This will allow the capacitive touch sensor to recognize the capper taffeta as a touchpad.</p>
                 
-
                 <p>At this point you can now begin to sew your swatches onto each square which will cover the copper taffeta pads. The copper tape can be pulled off so make sure that it is firmly stuck to the wire before sewing. Ultimately where the squares are placed and what swatches to use is up to one’s personal preference as long as everything is wired correctly.</p>
 
                 <h2>LEDs</h2>
-                <p>I’ve placed two LED on the center upper back of the jacket on the outside part of where the tag is. They are connected to two arbitrary digital/analog pins and ground. You can place your LEDs wherever you like as long as there is a resistor connected to ground as well. Also, I used NeoPixel RGBW LEDs but you can connect any LED of your choice. Depending on what note is triggered either the left or the right led will turn on.</p>
+                <p>I’ve placed one LED at the top part of the board. it is connected to two arbitrary digital/analog pins and ground. You can place your LEDs wherever you like as long as there is a resistor connected to ground as well. Also, I used NeoPixel RGBW LEDs but you can connect any LED of your choice. I would have liked to have added many lights if more time was permitted</p>
                 <p></p>
 
                 <h2>Code</h2>
@@ -163,16 +163,19 @@
 
               </div>
               <div class="tab-pane fade" id="v-pills-media" role="tabpanel" aria-labelledby="v-pills-media-tab">
-                <img src="./assets/neoprene0.jpg" class="img-fluid" alt="circuit mockup">
-                <img src="./assets/neoprene1.jpg" class="img-fluid" alt="circuit mockup">
-                <img src="./assets/microcontroller.jpg" class="img-fluid" alt="circuit mockup">
-                <img src="./assets/54e6r57t8uj.jpg" class="img-fluid" alt="circuit mockup">
+                <img src="./assets/neoprene0.jpg" class="img-fluid" alt="mood">
+                <img src="./assets/neoprene1.jpg" class="img-fluid" alt="neoprene cutting">
+                <img src="./assets/microcontroller.jpg" class="img-fluid" alt="adafruit microcontroller">
+                <img src="./assets/54e6r57t8uj.jpg" class="img-fluid" alt="fabrics and thread">
                 
               </div>
               <div class="tab-pane fade" id="v-pills-results" role="tabpanel" aria-labelledby="v-pills-results-tab">
+                <h2>User Interface</h2>
+                <img src="./assets/soft_board_.jpg" class="img-fluid" alt="soft board">
                 <h2>Demo</h2>
-                
-                <img src="./assets/soft_board_.jpg" class="img-fluid" alt="circuit mockup">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/5SYCWxKdtLU" title="YouTube video" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -183,12 +186,11 @@
     <div class="container">
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Blog</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Github</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="https://parsons.edu/dt-2022/talking-drum-machine/" class="nav-link px-2 text-muted">Thesis</a></li>
+        <li class="nav-item"><a target="_blank" href="https://github.com/gabedeko/comp-craft-final-doc" class="nav-link px-2 text-muted">Github</a></li>
+        <li class="nav-item"><a target="_blank" href="https://gabedeko.com" class="nav-link px-2 text-muted">Portfolio</a></li>
         </ul>
-        <p class="text-center text-muted">&copy; 2022 Gabe Deko</p>
+        <p class="text-center text-muted">2022 Gabriel-Lee Dekoladenu</p>
     </footer>
     </div>
 
